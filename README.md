@@ -26,8 +26,11 @@ The crawler is limited to one `subdomain`.
 
 To run the crawler: 
 ```sh
-go run cmd/crawler/main.go --inputURL="https://google.com" --max-depth=3
+go run cmd/crawler/main.go --inputURL="https://google.com" --max-depth=3 --output-file="sitemap.txt"
 ```
+- **inputURL**: URL to be crawled. Defaults to `https://google.com`.
+- **output-file**: Output file name for sitemap text file. Defaults to `sitemap.txt`.
+- **max-depth**: Max depth to be crawled. Defaults to `3`.
 
 ### Tests
 

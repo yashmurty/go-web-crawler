@@ -18,7 +18,7 @@ var (
 
 func main() {
 	flag.StringVar(&InputURL, "inputURL", "https://google.com", "URL to be crawled")
-	flag.StringVar(&OutputFile, "outputFile", "sitemap.txt", "Output file name for sitemap text file")
+	flag.StringVar(&OutputFile, "output-file", "sitemap.txt", "Output file name for sitemap text file")
 	flag.IntVar(&MaxDepth, "max-depth", 3, "Max depth to be crawled")
 	flag.Parse()
 
